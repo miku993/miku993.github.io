@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Digital Clock</title>
+        
+        <meta name="Title" content="Digital Clock" />
+        <meta name="description" content="Digital Clock is a jQuery plugin that transform a HTML5 canvas element into configurable digital clock animation using CreateJS library, the digital clock is form by 48 blocks where it will transform to different numbers.">
+		<meta name="keywords" content="digital, clock, plugin, canvas, timer, block, animation, transition">
+        
+     
+        <meta name="twitter:title" content="Digital Clock" />
+        <meta name="twitter:description" content="Digital Clock is a jQuery plugin that transform a HTML5 canvas element into configurable digital clock animation using CreateJS library, the digital clock is form by 48 blocks where it will transform to different numbers." />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <link rel="shortcut icon" href="https://demonisblack.com/code/2016/digitalclock/canvas/icon.ico" type="image/x-icon">
+        <link href="css/prism.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+
+        <!-- CONTENT START-->
+        <div id="mainHolder">
+        	<div class="startBackground">
+                <section>
+                    <div class="content">
+                    	<h1>数码时钟</h1>
+                        <h5>DIGITAL CLOCK 是一个 JQUERY 插件，它使用 CREATEJS 库将 HTML5 画布元素转换为可配置的数字时钟动画，数字时钟由 48 个块组成，在那里它将转换为不同的数字。</h5>
+                        <br/>
+                    </div>
+            	</section>
+            </div>
+            
+            <section class="single">
+            	<h3 class="colorBlue">DEMOS</h3>
+            	<div class="demo">
+                	<canvas id="clockHolder" width="700" height="350"></canvas>
+                    
+                    <canvas id="clockStaticHolder" width="500" height="200"></canvas>
+                 </div>
+            </section>
+            
+            <hr/>
+            
+            <section class="single">
+            	<div class="content">
+                    <h3 class="colorBlue">FEATURES</h3>
+                    
+                    <div class="features colorBlue fontFeatures">
+                        <ul>
+                            <li>Works Great on any Device (Desktop, Tablet, Mobile).</li>
+                            <li>Ready to use with assets included.</li>
+                            <li>Easy to replace your own assets.</li>
+                            <li>Adjustable color, position, speed, for each bottle or glasses.</li>
+                            <li>All options, methods and events are documented.</li>
+                            <li>Make with CreateJS</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <hr/>
+            
+            <section class="single">
+            	<div class="content howto">
+                    <h3 class="colorBlue">HOW TO USE</h3>
+                    
+                    <div class="step">
+                        <h5>Step 1: Link required files</h5>
+                        <pre>
+                            <code class="language-html">
+    &lt;script src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/createjs.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/digital-clock.js&quot;&gt;&lt;/script&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    
+                    <div class="step">
+                        <h5>Step 2: HTML markup</h5>
+                        <pre>
+                            <code class="language-html">
+	&lt;canvas id=&quot;clockHolder&quot; width=&quot;1000&quot; height=&quot;500&quot;&gt;&lt;/canvas&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    
+                    <div class="step">
+                        <h5>Step 3: Call the JS</h5>
+                        <pre>
+                            <code class="language-js">
+   $(document).ready(function(){
+            $('#clockHolder').digitalClock({colour:'#8F44AD',
+                                        blockWidth:10,
+                                        blockHeight:50});
+    });
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- CONTENT END-->
+        
+        <script src="js/vendor/jquery.min.js"></script>
+        
+        <script src="js/prism.js"></script>
+        <script src="js/vendor/createjs.min.js"></script>
+        <script src="js/digital-clock.js"></script>
+        <script src="js/init.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-424386-54');
+        </script>
+
+    </body>
+</html>

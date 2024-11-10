@@ -1,0 +1,149 @@
+html, body{ background:#fff; margin:0; padding:0; }
+
+#mainHolder{ position:relative; width:100%; height:100%; font-family: 'Lato', sans-serif; text-align:center; }
+.startBackground{ background:#369; width:100%; padding:80px 0 50px; color:#fff; }
+.endBackground{ background:#ECEFF1; width:100%; padding:40px 0 30px; color:#369; }
+section{ width:100%; max-width:800px; margin:auto; padding:20px 0; position:relative; }
+.single{ padding:50px 0; }
+
+h1{ font-family: 'Lato', sans-serif; font-weight:bold; font-size:60px; margin:30px 0; text-transform: uppercase; }
+h2{ font-family: 'Lato', sans-serif; font-weight:bold; font-size:50px; margin:30px 0; text-transform: uppercase; }
+h3{ font-family: 'Lato', sans-serif; font-weight:bold; font-size:30px; margin:20px 0; text-transform: uppercase; }
+h5{ font-family: 'Lato', sans-serif; font-weight:bold; font-size:20px; line-height:30px; margin:10px 0; text-transform: uppercase; }
+.fontFeatures{ font-family: 'Lato', sans-serif; font-size:20px; line-height:20px; }
+.fontMask{ font-family: 'Lato', sans-serif; font-size:20px; line-height:30px; }
+
+.colorBlue{ color:#369; }
+.colorGrey{ color:#666; }
+
+hr{ border:none; border-bottom:#ECEFF1 solid 2px; width:90%; margin:auto; max-width:750px; }
+
+.demo{ width:85%; margin:auto;}
+.action { margin-top:50px; text-align:center; }
+.features{ text-align:left; width:80%; margin:auto; }
+.features li{ padding:10px 0; }
+.howto{ color:#999; }
+.step{ margin:50px 0 20px; }
+
+pre{ border-radius:10px; }
+
+.editHolder{ text-align:left; width:70%; margin: 50px auto 100px;}
+.editHolder .leftContent{ width:35%; float:left;}
+.editHolder .rightContent{ width:65%; float:left;}
+.editHolder .editActionHolder{ margin-top:100px;}
+
+@media only screen and (max-width: 900px) {
+	h1{ font-size:50px; margin:30px 0; }
+	h2{ font-size:40px; margin:30px 0; }
+	h3{ font-size:25px; margin:20px 0; }
+	h5{ font-size:15px; margin:10px 0; }
+	
+	.fontFeatures{ font-size:20px; line-height:20px; }
+	
+	.startBackground{ padding:70px 0 40px; }
+	.endBackground{ padding:30px 0 20px; }
+	.step{ margin:40px 0 20px; }
+}
+
+@media only screen and (max-width: 700px) {
+	h1{ font-size:40px; margin:20px 0; }
+	h2{ font-size:30px; margin:20px 0; }
+	h3{ font-size:20px; margin:15px 0; }
+	h5{ font-size:12px; margin:5px 0; }
+	
+	.fontFeatures{ font-size:15px; line-height:15px; }
+	
+	.startBackground{ padding:50px 0 20px; }
+	.endBackground{ padding:20px 0 15px; }
+	.step{ margin:30px 0 15px; }
+}
+
+/* General Buttons */
+button {
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-size: 15px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+  cursor: pointer;
+
+/* Just for presentation */  
+  display: inline-block;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+button:active {
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+  top: 1px;
+}
+
+button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 20px solid #187dbc;
+  border-bottom: 20px solid #187dbc;
+  border-left: 16px solid transparent;
+  border-right: 20px solid #187dbc;
+  position: absolute;
+  opacity: 0.6; 
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;  
+}
+
+/* Button pointing left */
+
+button.back {
+  text-align: right;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+button.back:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 20px solid #187dbc;
+  border-bottom: 20px solid #187dbc;
+  border-right: 16px solid transparent;
+  border-left: 20px solid #187dbc;
+  position: absolute;
+  opacity: 0.6; 
+  left: 0;
+  top: 0;
+  border-radius: 5px 0 0 5px;    
+}
+
+/* Single buttons */
+
+button.site {
+  text-align: center;
+  text-indent: 0;
+}
+button.site:after{
+  display: none;
+}
+
+button.purchase{
+	width:200px;
+	height:60px;
+	font-size:18px;
+	font-weight:bold;	
+}
+
+.purchase:after {
+  border-top: 30px solid #187dbc;
+  border-bottom: 30px solid #187dbc;
+  border-left: 25px solid transparent;
+  border-right: 20px solid #187dbc; 
+}
